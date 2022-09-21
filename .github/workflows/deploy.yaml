@@ -27,7 +27,6 @@ jobs:
           region: 'eu-west-1'
           source: '_site'
           destination_bucket: ${{ secrets.AWS_S3_BUCKET_NAME }}
-          destination_prefix: /
           delete: true
           quiet: false
 
