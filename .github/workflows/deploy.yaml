@@ -25,11 +25,17 @@ jobs:
 
       - run: bundle exec jekyll build
 
-      - name: "Deploy to AWS S3"
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        run: aws s3 sync ./_site/ s3://${{ secrets.AWS_S3_BUCKET_NAME }} --acl public-read --delete --cache-control max-age=604800
+      - name: Push build to S3
+        uses: sai-sharan/aws-s3-sync-action@master
+        with:
+          access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          region: 'eu-west-1'
+          source: '_site/'
+          destination_bucket: ${{ secrets.AWS_S3_BUCKET_NAME }}
+          destination_prefix: /
+          delete: true
+          quiet: false
 
       - name: "Create AWS Cloudfront Invalidation"
         env:
