@@ -19,16 +19,15 @@ jobs:
 
       - run: bundle exec jekyll build
 
-      - name: Push build to S3
-        uses: sai-sharan/aws-s3-sync-action@master
+      - uses: jakejarvis/s3-sync-action@master
         with:
-          access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          region: 'eu-west-1'
-          source: '_site'
-          destination_bucket: ${{ secrets.AWS_S3_BUCKET_NAME }}
-          delete: true
-          quiet: false
+          args: --acl public-read --follow-symlinks --delete
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET_NAME }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: 'us-west-1'
+          SOURCE_DIR: '_site'
 
       - name: Invalidate CloudFront
         uses: chetan/invalidate-cloudfront-action@v2
