@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bezmiegs</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        color: #E38B2D;
+        background-color: #001E29;
+      }
+
+      body:hover {
+        cursor: pointer;
+      }
+
+      #content {
+        font-size: 3.5vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -55%);
+        width: 100%;
+      }
+
+      #more {
+        font-size: 1.5vw;
+      }
+    </style>
+
+    <script type="text/javascript">
+      function openRandomPoem() {
+        window.location.href = '/random?lang=lv&not=' + window.encodeURIComponent('/poem/lang-lv/2022/09/20/bezmiegs.html');
+      }
+    </script>
+  </head>
+
+  <body onclick="openRandomPoem()">
+    <div id="content">
+      <p>Varbūt var dabūt miegu <br />
+Vai ar vilcienu izbraukt caur sienu <br />
+Nezinu nevienu, kam reizēm nav garu dienu <br />
+“Vienu mieru” sakam, bet gatavojamies <br />
+Kaut kam pavisam trakam.</p>
+
+    </div>
+  </body>
+</html>

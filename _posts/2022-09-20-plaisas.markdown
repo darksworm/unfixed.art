@@ -1,0 +1,10 @@
+---
+layout: poem
+title:  "Plaisas"
+date:   2022-09-20 19:33:29 +0300
+categories: poem lang-lv
+---
+
+Plaisas veras \
+Mēs tās radam savas \
+neredzamas

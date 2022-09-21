@@ -1,0 +1,11 @@
+---
+layout: poem
+title:  "Maldīgs"
+date:   2022-09-20 19:33:29 +0300
+categories: poem lang-lv
+---
+
+Kāpēc gan ne? \
+Neatklāts es te... \
+Aprēķināts tu man... \
+Maldīgs es sev.

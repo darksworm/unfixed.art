@@ -1,0 +1,10 @@
+---
+layout: poem
+title:  "Neviens"
+date:   2022-09-20 19:33:29 +0300
+categories: poem lang-lv
+---
+
+Tukšs... \
+Tas tur un te pat \
+nekur un neviens

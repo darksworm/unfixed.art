@@ -1,0 +1,12 @@
+---
+layout: poem
+title:  "tu"
+date:   2022-09-20 19:33:29 +0300
+categories: poem lang-lv
+---
+
+tu \
+tur \
+es \
+šur \
+tur

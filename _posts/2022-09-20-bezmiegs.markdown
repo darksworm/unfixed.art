@@ -1,0 +1,12 @@
+---
+layout: poem
+title:  "Bezmiegs"
+date:   2022-09-20 19:33:29 +0300
+categories: poem lang-lv
+---
+
+Varbūt var dabūt miegu \
+Vai ar vilcienu izbraukt caur sienu \
+Nezinu nevienu, kam reizēm nav garu dienu \
+"Vienu mieru" sakam, bet gatavojamies \
+Kaut kam pavisam trakam.

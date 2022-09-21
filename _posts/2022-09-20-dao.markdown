@@ -1,0 +1,11 @@
+---
+layout: poem
+title:  "Dao"
+date:   2022-09-20 19:33:29 +0300
+categories: poem lang-lv
+---
+
+Vezums vai nasts? \
+Krāvums vai grāvums? \
+Kāpēc gribi saprast \
+To ar ko var tikai aprast?

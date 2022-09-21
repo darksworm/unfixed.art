@@ -1,0 +1,16 @@
+<script type="text/javascript">
+    const getParameter = (key) => {
+        const address = window.location.search
+        const parameterList = new URLSearchParams(address)
+        return parameterList.get(key)
+    }
+
+    const previousHREF = window.decodeURIComponent(getParameter("not"))
+
+    const postsHREF = ["/poem/lang-lv/2022/09/20/tu.html","/poem/lang-lv/2022/09/20/plaisas.html","/poem/lang-lv/2022/09/20/nosvidis.html","/poem/lang-lv/2022/09/20/neviens.html","/poem/lang-lv/2022/09/20/nekur-gajis.html","/poem/lang-lv/2022/09/20/neatrasties.html","/poem/lang-lv/2022/09/20/maldigs.html","/poem/lang-lv/2022/09/20/karotes-gals.html","/poem/lang-lv/2022/09/20/dao.html","/poem/lang-lv/2022/09/20/brivs-vai-slazda.html","/poem/lang-lv/2022/09/20/bezmiegs.html","/poem/lang-lv/2022/09/20/asakas.html"]
+        .filter(url => url !== previousHREF);
+
+    const randomIndex = Math.floor(Math.random() * postsHREF.length);
+
+    window.location.href = postsHREF[randomIndex];
+</script>

@@ -1,0 +1,11 @@
+---
+layout: poem
+title:  "Asakas"
+date:   2022-09-20 19:33:29 +0300
+categories: poem lang-lv
+---
+
+Nejauc lietu ar asarām \
+Netrauc citus par asakām \
+Brien tu savā pasakā \
+Biezās miglas atskatā.

@@ -1,0 +1,13 @@
+---
+layout: poem
+title:  "Nosīvids"
+date:   2022-09-20 19:33:29 +0300
+categories: poem lang-lv
+---
+
+Nosvīdis, nokvēpēts un... atpestīts? \
+Nē - diena nelaiž vaļā. \
+Kņud... Paglāsti un sāk niezēt. \
+Pakasi - sāk sāpēt. \
+Pasit - sāp vēl vairāk... \
+Kur ir gals?

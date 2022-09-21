@@ -1,0 +1,19 @@
+---
+---
+
+<script type="text/javascript">
+    const getParameter = (key) => {
+        const address = window.location.search
+        const parameterList = new URLSearchParams(address)
+        return parameterList.get(key)
+    }
+
+    const previousHREF = window.decodeURIComponent(getParameter("not"))
+
+    const postsHREF = [{% for post in site.posts %}"{{ post.url }}"{% unless forloop.last %},{% endunless %}{% endfor %}]
+        .filter(url => url !== previousHREF);
+
+    const randomIndex = Math.floor(Math.random() * postsHREF.length);
+
+    window.location.href = postsHREF[randomIndex];
+</script>
